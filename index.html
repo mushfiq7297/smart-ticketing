@@ -1,11 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>smart ticketing</title>
+
+    <!-- Daisy UI and tailwind -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        
+    </style>
+
 </head>
-<body>
+
+<body class="mx-36">
+    <!-- navbar start -->
+    <nav>
+        <div class="navbar my-12">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a></a></li>
+                  <li>
+                    <a></a>
+                  </li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <a class="text-4xl font-bold">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-2">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>search</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn bg-[#1DD1001A] border-green-500 text-green-600">Bus <img src="/images/bus-icon.png" alt=""></a>
+            </div>
+          </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- banner start -->
+    <div class="banner">
+        <div class="hero h-[550px] bg-[url('/images/banner.png')] mx-auto rounded-[32px]">
+            <div class="hero-content text-center">
+              <div class="">
+                <h1 class=" py-6 text-5xl font-bold text-white">End-to-End Travel with</h1>
+                <h1 class="text-[#1DD100] text-5xl font-bold">P Paribahan</h1>
+               
+                <p class="py-6 mx-80 text-white">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                <button class="btn bg-[#1DD100] border-none">Buy Tickets</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <!-- banner end -->
     
+    <!-- best-offer-for-you start -->
+    <div class="best-offer">
+        <div class="hero min-h-screen">
+            <div class="hero-content text-center">
+              <div class="">
+                <h1 class="text-5xl font-bold">Best offer for you</h1>
+                <div class="py-6 flex">
+                    <div class="card-1 bg-[#FFBF0F] justify-center items-center p-4 rounded-l-3xl">
+                        <h1 class="font-extrabold text-2xl mx-24 pt-10">15% OFF</h1>
+                        <p class="text-2xl">on yor next purchase</p>
+                        <p>use by January 24</p>
+                    </div>
+                    <img class="bg-[#FFBF0F]" src="./images/cupon-devider.png " alt="">
+                    <div class="card-2 bg-[#FFBF0F] justify-center items-center p-4 rounded-r-3xl mr-6 ">
+                      <h1 class="font-extrabold text-3xl px-14 font-raleway pt-10">NEW<sub>15</sub></h1>
+                      <p>Cupone code</p>
+                    </div>
+                    <div class="card-3 bg-[#F78C9C] justify-center items-center p-4 rounded-l-3xl">
+                        <h1 class=" font-extrabold text-2xl mx-24 pt-10">20% OFF</h1>
+                        <p class="text-2xl">on yor next purchase</p>
+                        <p>use by January 24</p>
+                    </div>
+                    <img class="bg-[#F78C9C]" src="./images/cupon-devider.png " alt="">
+                    <div class="card-4 bg-[#F78C9C] justify-center items-center px-14 rounded-r-3xl">
+                        <h1 class="font-extrabold text-2xl pt-10">Couple 20</h1>
+                        <p>Cupone code</p>
+                    </div>
+                </div>
+                <button class="btn bg-white-white border-[#1DD100] text-[#1DD100]">Get Started</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <!-- best-offer-for-you end -->
+
+    <!-- ph-paribahan start -->
+    <div class="ph-paribahan border-[#1DD100] rounded-t-3xl border-solid border-2">
+      <div class="hero bg-base-200 rounded-t-3xl">
+        <div class="hero-content text-center">
+          <div class="">
+            <h1 class="text-5xl font-bold pt-24">P.H Paribahan</h1>
+            <p class="py-6 px-72">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- ph-paribahan end -->
 </body>
+
 </html>
