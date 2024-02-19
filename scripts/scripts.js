@@ -7,11 +7,7 @@ let count = 0;
 const allBtn = document.getElementsByClassName("add-btn");
 // console.log(allBtn);
 
-const button = document.querySelector('#disabled-btn');
-button.disabled = true;
-
 for(const btn of allBtn){
-    // console.log(btn);
     
             btn.addEventListener("click", function (e){
             count+=1;
@@ -46,30 +42,11 @@ for(const btn of allBtn){
              setInerText("total-price",count*550);
              setInerText("grand-total", count*550);
              
-            const lengthNumber = document.getElementById("length-number").value.length;
-            const lengthOfNumber = parseInt(lengthNumber);
-            console.log(lengthOfNumber);
-            console.log(count);
-            
-            if(lengthOfNumber>0 && count>0)
-             {
-                const button = document.querySelector('#disabled-btn');
-                button.disabled = false;
-             }
-             
+
             });
         }
+
 function next(){
     hideElementById("main-section");
     showElementById("success-page");
-}
-
-const lengthNumber = document.getElementById("length-number").value.length;
-            const lengthOfNumber = parseInt(lengthNumber);
-document.getElementById("length-number").addEventListener("input", function() {
-    if(lengthOfNumber>0 && count>0)
- {
-    const button = document.querySelector('#disabled-btn');
-    button.disabled = false;
- }
-})
+   }
